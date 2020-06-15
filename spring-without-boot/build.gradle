@@ -1,0 +1,22 @@
+plugins {
+  id 'java'
+  id 'war'
+}
+
+java {
+  sourceCompatibility = JavaVersion.VERSION_14
+  targetCompatibility = JavaVersion.VERSION_14
+}
+
+dependencies {
+  /* Lombok */
+  compileOnly 'org.projectlombok:lombok:1.18.12'
+  annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+  implementation 'javax.servlet:servlet-api:3.0-alpha-1'
+  implementation 'org.springframework:spring-context:5.2.7.RELEASE'
+  implementation 'org.springframework:spring-webmvc:5.2.7.RELEASE'
+
+  implementation 'com.fasterxml.jackson.core:jackson-core:2.11.0'
+  implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.0'
+}

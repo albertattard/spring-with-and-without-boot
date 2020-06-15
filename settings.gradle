@@ -1,0 +1,4 @@
+rootProject.name = 'spring-with-and-without-boot'
+
+include('spring-with-boot')
+include('spring-without-boot')
